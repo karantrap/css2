@@ -1,0 +1,45 @@
+.container{
+    height:800px;
+    width:600px;
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+}
+.box{
+    height:400px;
+    width:500px;
+    background-color: lightcoral;
+    border: 1px solid khaki;
+    animation-name:trap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+}
+/* @keyframes trap{
+    from{
+        width:212px;
+    }
+    to{
+        width: 400px;
+    }
+} */
+ @keyframes trap{
+    0%{
+        width:100px;
+        background-color: bisque;
+    }
+    30%{
+        width: 35%;
+        background-color: skyblue;
+    }
+    60%{
+        width:67%;
+        background-color: khaki;
+    }
+    80%{
+        width: 100%;
+        background-color: yellow;
+    }
+ }

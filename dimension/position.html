@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Corners</title>
+    <style>
+        .border-box {
+            position: relative;
+            height: 200px;
+            width: 600px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+            background-image: linear-gradient(blue,yellow);
+        }
+        .border-box:hover{
+            background-image: linear-gradient(violet,lightgreen);
+        }
+        .corner {
+            position: absolute;
+            font-size: 15px;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+        .center {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="border-box">
+    <div class="corner top-left">Hello</div>
+    <div class="corner top-right">Hello</div>
+    <div class="corner bottom-left">Hello</div>
+    <div class="corner bottom-right">Hello</div>
+    <div class="center">Hello</div>
+</div>
+
+</body>
+</html>

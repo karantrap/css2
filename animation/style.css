@@ -1,0 +1,22 @@
+.container{
+    height:300px;
+    width:300px;
+    background-color: pink;
+    border:1px solid blue;
+    display: flex;
+
+}
+.box{
+    border:1px solid blueviolet;
+    background-color: aquamarine;
+    height:100px;
+    width:100px;
+    margin:30px;
+    /* transition: all 1s ease 1s; property duration function delay */
+    transition: transform 2s ease;
+}
+.box:hover{
+    /* background-color: lightgray; */
+    transform: scale(2) translateX(300px) rotate(137deg); 
+
+}
